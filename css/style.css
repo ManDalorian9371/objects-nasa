@@ -138,13 +138,13 @@ section.informations {
 	padding: 10px;
 	min-width: 20vw;
 	max-width: 30vw;
-	border: 3px solid rgb(145, 109, 252, 0.6);
-	background-color: rgb(212, 229, 247);
+	border: 2px solid rgba(252, 185, 109);
+	background-color: rgb(247, 212, 212);
 	transition: box-shadow 0.5s ease, border 0.5s ease-out, opacity 2s ease-in;
 }
 .texts.active:hover {
-	border: 3px solid rgb(78, 159, 246);
-	box-shadow: -1px 1px 2px 5px rgba(145, 109, 252, 0.6);
+	border: 3px solid rgb(246, 151, 103);
+	box-shadow: -1px 1px 2px 5px rgba(252, 200, 109, 0.6);
 }
 h3 {
 	font-size: 15px;
@@ -219,18 +219,20 @@ img {
 	max-height: 50vh;
 	min-width: 35vw;
 	display: none;
-	transition: display 0.9s ease-in;
 	border-radius: 10px;
+	opacity: 0;
+	transition: ease-in-out;
 }
 img.active {
 	display: block;
+	opacity: 1;
 	cursor: pointer;
-	border: 3px solid rgb(145, 109, 252, 0.6);
-	transition: box-shadow 0.5s ease, border 0.5s ease-out, display 0.9s ease-in;
+	border: 1px solid rgb(252, 185, 109);
+	transition: box-shadow 0.5s ease, border 0.5s ease-out;
 }
 img:hover {
 	border: 2px solid rgb(13, 37, 61);
-	box-shadow: -1px 1px 2px 5px rgba(145, 109, 252, 0.6);
+	box-shadow: -1px 1px 2px 5px rgba(252, 200, 109, 0.6);
 }
 section#picture {
 	position: relative;
