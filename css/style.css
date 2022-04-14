@@ -21,7 +21,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin: 15px auto;
+	margin: 35px auto;
 	font-family: 'lato', sans-serif;
 	background-image: url(../pics/nasalogo2.png);
 	background-repeat: no-repeat;
@@ -49,9 +49,23 @@ section input
 	align-self: center;
 	width: fit-content;
 	margin-bottom: 10px;
-	border: 3px solid rgba(0, 0, 0, 0.9);
+	border: 3px solid rgba(234, 234, 234, 0.4);
 	border-radius: 15px;
-	background: rgb(2, 56, 114, 0.6);
+	background-image: radial-gradient(
+		circle,
+		#150242,
+		#1b0559,
+		#230671,
+		#2b068a,
+		#3306a4,
+		#3306a4,
+		#3306a4,
+		#3306a4,
+		#2b068a,
+		#230671,
+		#1b0559,
+		#150242
+	);
 }
 .input input,
 .input button {
@@ -80,7 +94,6 @@ section input
 	box-shadow: -1px 1px 1px 2px rgba(145, 109, 252, 0.6);
 	transform: scale(0.98);
 	animation-name: scaly;
-
 	animation-duration: 0.4s;
 }
 .input button:active {
@@ -89,7 +102,6 @@ section input
 .input input {
 	cursor: pointer;
 }
-
 span {
 	cursor: pointer;
 	padding: 10px;
@@ -103,12 +115,9 @@ span:active {
 	font-weight: bold;
 	transform: scale(1.01);
 }
-
-/*
-==========================
+/* ==========================
 section informations
-========================== 
-*/
+========================== */
 section.informations {
 	display: flex;
 	justify-content: center;
@@ -145,7 +154,6 @@ h3 {
 #picture {
 	margin-top: 30px;
 }
-
 .center {
 	height: 10vh;
 	width: 10vw;
@@ -195,7 +203,6 @@ h3 {
 .wave:nth-child(10) {
 	animation-delay: 0.9s;
 }
-
 @keyframes wave {
 	0% {
 		transform: scale(0);
@@ -235,10 +242,9 @@ section#picture {
 	color: bisque;
 	cursor: pointer;
 }
-/******************************************
+/* *****************************************
 /* ADDITIONAL STYLES
-/*******************************************/
-
+/****************************************** */
 @media screen and (max-width: 800px) {
 	main {
 		display: flex;
